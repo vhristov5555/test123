@@ -1,0 +1,13 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/android:api-29-node
+    working_directory: "~/hellocircletests"
+    steps:
+      # setup NPM
+      - run: echo $test1
